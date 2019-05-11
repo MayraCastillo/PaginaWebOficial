@@ -1,0 +1,107 @@
+/*------------Estilos del banner------------*/
+.banner
+{
+  height: 250px;
+  margin-top: 0px;
+  position: relative;
+  z-index: -1000;
+  background-color: blue;
+  overflow: hidden;
+}
+
+.banner .contenedor
+{
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+  color: #FFF; 
+  text-align: center;
+}
+
+#slider
+{
+   width: 2000px;
+   height: 250px;
+   background-image: url(../img/imgBanner.png);
+   background-size: 100% 100%;
+   animation: slider 60s infinite linear;
+}
+
+@keyframes slider{
+  to{
+     background-position:-2000px;
+  }
+}
+
+/*------------Estilos el contenido------------*/
+.imgIntegrantes
+{
+  width: 100%;
+  margin-top: -55px;
+}
+
+.contenido
+{
+  padding: 20px;
+  text-align: center;
+  color: #FFF;
+}
+
+
+/*------------Estilos de la informacion------------*/
+
+.info-columna
+{
+  background: -webkit-linear-gradient(#000582, #03E7FC);
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+  margin-top:30px;
+  margin-bottom:15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #E6E6E6;
+}
+
+.info-img
+{
+  width: 40%;
+}
+
+/*------------Estilos del responsive------------*/
+@media(min-width: 600px){
+  .informacion
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info-columna
+  {
+    margin-right: 20px;
+  }
+
+  .info-img
+  {
+    width: 85px;
+  }
+}
+
+@media(min-width: 1024px){
+  .contenido
+  {
+    margin-top: 0px;
+  }
+
+  #msgBienvenida
+  {
+    font-size: 200%;
+  }
+
+  #texto
+  {
+    font-size: 150%;
+    padding-right: 20px;
+  }
+}
